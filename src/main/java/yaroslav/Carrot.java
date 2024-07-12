@@ -1,11 +1,11 @@
 package yaroslav;
 
 public class Carrot {
-    private int[] weight;
+    private final int[] weight;
 
-    private int maxWeight;
+    private final int maxWeight;
 
-    private int walking;
+    private final int walking;
 
     public Carrot(int[] weight, int maxWeight, int walking) {
         this.weight = weight;
@@ -13,34 +13,15 @@ public class Carrot {
         this.walking = walking;
     }
 
-    public int getMaxWeight() {
-        return maxWeight;
-    }
-
-    public void setMaxWeight(int maxWeight) {
-        this.maxWeight = maxWeight;
-    }
-
     public int getWalking() {
         return walking;
     }
 
-    public void setWalking(int walking) {
-        this.walking = walking;
+    public int getMaxWeight() {
+        return maxWeight;
     }
 
     public int[] getWeight() {
         return weight;
     }
-
-    public void setWeight(int[] weight) {
-        this.weight = weight;
-    }
-
-    public void print() {
-        for (int i = 0; i < weight.length; i++) {
-            System.out.println(i);
-        }
-    }
-
 }

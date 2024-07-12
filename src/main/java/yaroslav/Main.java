@@ -3,10 +3,11 @@ package yaroslav;
 import java.io.IOException;
 
 public class Main {
+
     public static void main(String[] args) throws IOException {
-        int[] carrotWeight = {1, 2, 3, -1, 4, 5};
-        int maxWeight = 5;
-        int walking = 10;
+        final int[] carrotWeight = {1, 2, 3, 4, 5};
+        final int maxWeight = 5;
+        final int walking = 10;
         Carrot carrot = new Carrot(carrotWeight, maxWeight, walking);
         int result = CarrotAlg(carrot);
         System.out.println(result);
